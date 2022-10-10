@@ -1,0 +1,69 @@
+libarchive-any-lite-perl (0.11-1) unstable; urgency=medium
+
+  Team upload
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Nick Morrott ]
+  * New upstream release
+  * Add myself to Uploaders
+  * Update Standards-Version to 3.9.8 (no changes)
+  * Update debhelper compatibility to 9
+
+  [ gregor herrmann ]
+  * Drop version constraint from perl (build) dependency.
+    Already satisfied in oldstable.
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Fri, 22 Jul 2016 16:44:54 +0100
+
+libarchive-any-lite-perl (0.10-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Damyan Ivanov ]
+  * mark package as autopkg-testable
+  * Declare conformance with Policy 3.9.6
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 26 Nov 2015 19:58:41 +0000
+
+libarchive-any-lite-perl (0.10-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 0.10
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 12 Aug 2014 20:56:38 +0200
+
+libarchive-any-lite-perl (0.09-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.09
+  * Update (build-)dependency for Archive::Tar.
+    Make Build-Depends-Indep and Depends on perl versioned to perl
+    (>= 5.13.9) as Archive::Tar 1.76 is required.
+  * Make (build-)dependency for libtest-useallmodules-perl unversioned.
+    Make Build-Depends-Indep and Depends on libtest-useallmodules-perl
+    unversioned as the required version is already satisfied in oldstable.
+  * Drop libtest-useallmodules-perl from Depends.
+    Test::UseAllModules is only used in the testsuite.
+  * Declare compliance with Debian Policy 3.9.5
+
+  [ Florian Schlichting ]
+  * Add build-dependency on ExtUtils::MakeMaker::CPANfile
+
+ -- Florian Schlichting <fsfs@debian.org>  Thu, 01 May 2014 21:43:45 +0200
+
+libarchive-any-lite-perl (0.07-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #719356)
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 11 Aug 2013 13:31:07 +0200

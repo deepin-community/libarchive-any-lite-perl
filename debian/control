@@ -1,0 +1,30 @@
+Source: libarchive-any-lite-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>,
+           Nick Morrott <knowledgejunkie@gmail.com>
+Build-Depends: debhelper (>= 9),
+               libextutils-makemaker-cpanfile-perl
+Build-Depends-Indep: libarchive-zip-perl,
+                     libparallel-forkmanager-perl,
+                     libtest-useallmodules-perl,
+                     perl
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libarchive-any-lite-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libarchive-any-lite-perl.git
+Homepage: https://metacpan.org/release/Archive-Any-Lite
+Testsuite: autopkgtest-pkg-perl
+
+Package: libarchive-any-lite-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libarchive-zip-perl
+Description: simple CPAN package extractor
+ Archive::Any::Lite is a fork of Archive::Any by Michael Schwern and
+ Clint Moore. The main difference is that Archive::Any::Lite works
+ properly even when you fork(), and may require less memory to extract a
+ tarball. On the other hand, Archive::Any::Lite isn't pluggable (it only
+ supports file formats used in the CPAN toolchains), and doesn't check
+ mime types (at least as of this writing).
